@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drink Menu", "Drink Menu\Drink Menu.csproj", "{717B0DC0-3578-4E9E-B594-D5FFFC83A19B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{717B0DC0-3578-4E9E-B594-D5FFFC83A19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717B0DC0-3578-4E9E-B594-D5FFFC83A19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717B0DC0-3578-4E9E-B594-D5FFFC83A19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717B0DC0-3578-4E9E-B594-D5FFFC83A19B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3675C487-B816-40BB-843F-359D83645AA1}
+	EndGlobalSection
+EndGlobal
