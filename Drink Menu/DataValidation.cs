@@ -1,0 +1,46 @@
+﻿using System.Globalization;
+
+namespace Flashcards
+{
+    public class DataValidation
+    {
+        public static CultureInfo enUS = new CultureInfo("en-US");
+
+        public static DateTime InputTime(string StartOrEnd)
+        {
+            DateTime dT;
+            Console.Clear();
+            Console.WriteLine($"Please enter the {StartOrEnd} time in this format (and this format only)\nMM/dd/YYYY hh:mm AM/PM");
+            while (!DateTime.TryParseExact(Console.ReadLine(), "g", enUS, DateTimeStyles.AllowLeadingWhite, out dT))
+                Console.WriteLine("Incorrect format, please enter time in this format: MM-dd-YYYY hh:mm");
+            return dT;
+        }
+
+        public static string EmptyStringCheck()
+        {
+            string a = Console.ReadLine();
+            while (String.IsNullOrWhiteSpace(a))
+            {
+                Console.WriteLine("Invalid input, enter again:");
+                a = Console.ReadLine();
+            }
+            return a;
+        }
+
+        public static int ListCountCheck(int count)
+        {
+            int a;
+            while (!Int32.TryParse(Console.ReadLine(), out a) || a < 1 || a > count)
+                Console.WriteLine("Invalid input, enter again:");
+            return a;
+        }
+
+        public static int MenuInputCheck(int count)
+        {
+            int a;
+            while (!Int32.TryParse(Console.ReadLine(), out a) || a < 0 || a > count)
+                Console.WriteLine("Invalid input, enter again:");
+            return a;
+        }
+    }
+}
