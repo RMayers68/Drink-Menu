@@ -46,5 +46,30 @@ namespace Drink_Menu
         public string? strMeasure13 { get; set; }
         public string? strMeasure14 { get; set; }
         public string? strMeasure15 { get; set; }
+        
+        public Dictionary<int, string[]> IngredientMeasures { get; set; }
+            
+        public void SetDictionary()
+        {
+            Dictionary<int, string[]> tmp = new()
+            {
+                { 1,new string[] { strMeasure1, strIngredient1 } },
+                { 2,new string[] { strMeasure2, strIngredient2 } },
+                { 3,new string[] { strMeasure3, strIngredient3 } },
+                { 4,new string[] { strMeasure4, strIngredient4 } },
+                { 5,new string[] { strMeasure5, strIngredient5 } },
+                { 6,new string[] { strMeasure6, strIngredient6 } },
+                { 7,new string[] { strMeasure7, strIngredient7 } },
+                { 8,new string[] { strMeasure8, strIngredient8 } },
+                { 9,new string[] { strMeasure9, strIngredient9 } },
+                { 10,new string[] { strMeasure10, strIngredient10 } },
+                { 11,new string[] { strMeasure11, strIngredient11 } },
+                { 12,new string[] { strMeasure12, strIngredient12 } },
+                { 13,new string[] { strMeasure13, strIngredient13 } },
+                { 14,new string[] { strMeasure14, strIngredient14 } },
+                { 15,new string[] { strMeasure15, strIngredient15 } },
+            };
+            IngredientMeasures = tmp;
+        }               
     }
 }
